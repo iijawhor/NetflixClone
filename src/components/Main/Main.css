@@ -1,0 +1,107 @@
+.main {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 16px;
+  max-height: 60vh;
+  cursor: pointer;
+}
+.main > .img {
+  width: 100%;
+  height: 100%;
+  max-height: 650px;
+  background-position: center;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.main-contents {
+  position: absolute;
+  margin: 0 20px;
+  top: 40%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: start;
+  width: 55vw;
+  /* padding: 20px; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.main-contents > h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+.main-contents > .content-bottom {
+  position: relative;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+.main-contents > .content-bottom > .vote {
+  border: 1px solid gainsboro;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.main-contents > .overview {
+  font-size: 2.3vh;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  color: white;
+  overflow: hidden;
+}
+.buttons {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.buttons > button {
+  border: none;
+  background: none;
+  font-size: 2vh;
+  color: white;
+  border: 1px solid gainsboro;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.buttons > .my-list-button {
+  border-right: none;
+}
+.button-plus-icon {
+  position: absolute;
+  top: 3px;
+  right: -11px;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 768px) {
+  .main-contents {
+    top: 50%;
+    left: 45%;
+    width: 90%;
+  }
+  .main {
+    height: fit-content;
+  }
+  .main-contents > h2 {
+    font-size: 3vh;
+  }
+  .buttons {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .main {
+    height: 30vh;
+  }
+}
